@@ -21,13 +21,13 @@ public class AppTest
     @Test
     public void shouldAnswerWithTrue1()
     {
-        assertTrue( false );
+        assertTrue( true );
     }
  
     @Test
     public void shouldAnswerWithTrue2()
     {
-        assertTrue( true );
+        assertTrue( false );
     }
         @Test
     public void shouldAnswerWithTrue3()
