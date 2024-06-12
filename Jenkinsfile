@@ -1,9 +1,9 @@
 pipeline {
-    agent any
- 
-    tools {
-        // Install the Maven version configured as "M3" and add it to the path.
-        maven "maven3"
+    agent {
+        docker {
+            image 'maven:3.9.3-eclipse-temurin-17'
+            args '-v $HOME/.m2:/root/.m2'
+        }
     }
  
     stages {
